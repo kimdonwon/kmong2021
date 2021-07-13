@@ -16,8 +16,7 @@ def hana(all_values,driver):
     url = 'https://gdadmin.bizpanchok.co.kr/base/login.php'
     driver.get(url)
     driver.implicitly_wait(3)
-    driver.find_element_by_name('managerId').send_keys('2220859859')
-    driver.find_element_by_name('managerPw').send_keys('a89838983!')
+
     driver.find_element_by_xpath('//*[@id="frmLogin"]/table/tbody/tr/td/div/div[1]/div[2]/input').click()
     time.sleep(3)
     driver.implicitly_wait(3)
@@ -247,8 +246,7 @@ def haeorem(all_values,driver):
 
     driver.implicitly_wait(3)
 
-    driver.find_element_by_name('Mid').send_keys('jesus1018')
-    driver.find_element_by_name('Pwd').send_keys('0000')
+
     driver.find_element_by_xpath('/html/body/table/tbody/tr/td/table/tbody/tr/td[3]/p/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td[3]/input').click()
 
     count = (len(all_values) - 2)
