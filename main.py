@@ -5,7 +5,7 @@ import openpyxl
 import os, sys
 import util
 from selenium.webdriver.support.ui import Select
-import crawling
+import crawling, crawling2
 
 
 
@@ -20,9 +20,9 @@ options.add_experimental_option("excludeSwitches", ["enable-logging"])
 driver = webdriver.Chrome(options=options)
 
 #crawling.hana(all_values,driver)
-crawling.haeorem(all_values,driver)
+#crawling.haeorem(all_values,driver)
 
-
+crawling2.vkfclf(all_values,driver)
 
 
 print("########################## 프로그램 완료 ##################################")

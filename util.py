@@ -55,3 +55,13 @@ def findImage(name):
             fullName = os.getcwd()+'/image/'+i
 
     return str(fullName)
+
+
+def findImage(name,list):
+    fullName=''
+    fl=os.listdir('./image/'+list)
+    for i in fl:
+        if name in i:
+            fullName = os.getcwd()+'/image/'+list+'/'+i
+
+    return str(fullName)
